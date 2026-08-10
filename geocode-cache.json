@@ -686,5 +686,337 @@
   "11 humphries street, greytown": {
     "lat": -41.0858183,
     "lng": 175.45156
+  },
+  "aerowork airport road, whanganui": {
+    "lat": -39.9615033,
+    "lng": 175.0269431
+  },
+  "513 raetihi ohakune road, raetihi": {
+    "lat": -39.4224415,
+    "lng": 175.3380913
+  },
+  "37 pukenaua road, taihape": {
+    "lat": -39.6591579,
+    "lng": 175.776597
+  },
+  "163 nannestads line, feilding": null,
+  "29 rexwood street, carterton": {
+    "lat": -41.0275995,
+    "lng": 175.5199813
+  },
+  "296 cambridge avenue, ashhurst": {
+    "lat": -40.2804468,
+    "lng": 175.7577128
+  },
+  "84 north street, ashhurst": {
+    "lat": -40.2787525,
+    "lng": 175.7530442
+  },
+  "122 hewitts road, linton": {
+    "lat": -40.4220576,
+    "lng": 175.5981522
+  },
+  "45d brandon street, featherston": {
+    "lat": -41.1180313,
+    "lng": 175.3214624
+  },
+  "677 rapanui road, wanganui": {
+    "lat": -39.8847102,
+    "lng": 174.936417
+  },
+  "10 webster place, otamatea": {
+    "lat": -39.9082732,
+    "lng": 175.0306419
+  },
+  "5 pukeko place, riversdale beach": {
+    "lat": -41.0945483,
+    "lng": 176.0628853
+  },
+  "75 somerset road, springvale": {
+    "lat": -39.9234142,
+    "lng": 175.0219404
+  },
+  "74 cambridge avenue, ashhurst": {
+    "lat": -40.2915901,
+    "lng": 175.7547655
+  },
+  "115 atawhai road, fitzherbert": {
+    "lat": -40.3829178,
+    "lng": 175.6226026
+  },
+  "7 long melford road, awapuni": {
+    "lat": -40.3788028,
+    "lng": 175.5854128
+  },
+  "9a belvedere crescent, takaro": {
+    "lat": -40.3513379,
+    "lng": 175.5868154
+  },
+  "338e leedstown road, hunterville": {
+    "lat": -39.9928658,
+    "lng": 175.4919913
+  },
+  "37 fry road, halcombe": {
+    "lat": -40.1392334,
+    "lng": 175.6127811
+  },
+  "265 papamoa beach road, papamoa beach, papamoa, 3118": null,
+  "37 bonny dale lane, te puke, te puke, 3189": null,
+  "12 hairini street, hairini, tauranga, 3112": null,
+  "138 waikumete road, kaihere, 3597": null,
+  "76 waratah street, matua, tauranga, 3110": null,
+  "291 paku drive, tairua, 3508": null,
+  "2903 state highway 1, lichfield, putaruru, 3482": null,
+  "2532 old taupo road, tokoroa, 3491": null,
+  "470b ohauiti road, ohauiti, tauranga, 3173": null,
+  "1 sam heywood place, pyes pa, tauranga, 3112": null,
+  "54 chater avenue, bethlehem, tauranga, 3110": null,
+  "1965b state highway 2, greytown": {
+    "lat": -41.0963629,
+    "lng": 175.4239773
+  },
+  "4 barracks avenue, solway": {
+    "lat": -40.9554983,
+    "lng": 175.6249971
+  },
+  "40 campbell place, marton": null,
+  "5b blennerville close, marton": {
+    "lat": -40.0659175,
+    "lng": 175.3708617
+  },
+  "40 ruapehu drive, fitzherbert": {
+    "lat": -40.3799424,
+    "lng": 175.6308332
+  },
+  "142 west street, feilding": {
+    "lat": -40.2152753,
+    "lng": 175.5578282
+  },
+  "14 tangaroa view, otamatea": {
+    "lat": -39.9090846,
+    "lng": 175.0177134
+  },
+  "788 tangimoana road, ōhakea": {
+    "lat": -40.2387423,
+    "lng": 175.3584202
+  },
+  "220 somerset road, carterton": {
+    "lat": -41.0298068,
+    "lng": 175.5545232
+  },
+  "64a thomas road, carrington": {
+    "lat": -41.0200002,
+    "lng": 175.4836958
+  },
+  "4 millennium way, feilding": {
+    "lat": -40.216905,
+    "lng": 175.5775581
+  },
+  "1244a rangitikei line, kauwhata": {
+    "lat": -40.2983652,
+    "lng": 175.5405339
+  },
+  "51a southdown drive, martinborough": null,
+  "8c michael street, masterton": {
+    "lat": -40.9552532,
+    "lng": 175.6482625
+  },
+  "6a garrity lane, greytown": {
+    "lat": -41.0838402,
+    "lng": 175.4500818
+  },
+  "41 kowhai street, castelcliff": null,
+  "56 willoughby street, halcombe": {
+    "lat": -40.1440098,
+    "lng": 175.4955649
+  },
+  "130 mount biggs road, halcombe": {
+    "lat": -40.1435835,
+    "lng": 175.4786781
+  },
+  "121 taikorea road, glen oroua": {
+    "lat": -40.3489451,
+    "lng": 175.3462277
+  },
+  "63 otawa drive, carterton": {
+    "lat": -40.9959843,
+    "lng": 175.5834154
+  },
+  "73 young street, whanganui east": {
+    "lat": -39.9160244,
+    "lng": 175.0606954
+  },
+  "70b duddings lane, featherson": null,
+  "25 whisky way, aokautere": {
+    "lat": -40.3858467,
+    "lng": 175.6557971
+  },
+  "289a fabians road, greytown": {
+    "lat": -41.118679,
+    "lng": 175.469335
+  },
+  "1 valkyrie close, carterton": {
+    "lat": -41.0369733,
+    "lng": 175.5108569
+  },
+  "72 jellicoe street, greytown": {
+    "lat": -41.0838246,
+    "lng": 175.470454
+  },
+  "966 kahutara road, kahutara": {
+    "lat": -41.2264628,
+    "lng": 175.3442546
+  },
+  "138 loop line, opaki": {
+    "lat": -40.8949168,
+    "lng": 175.6474431
+  },
+  "29 harrison street west, featherston": {
+    "lat": -41.1104877,
+    "lng": 175.3255662
+  },
+  "194 kiriwhakapapa road, masterton": {
+    "lat": -40.808025,
+    "lng": 175.599355
+  },
+  "49 wards line, greytown": {
+    "lat": -41.1291789,
+    "lng": 175.4517762
+  },
+  "4 boydfield street, whanganui east": {
+    "lat": -39.9165919,
+    "lng": 175.0548096
+  },
+  "2a buxton road, westmere": null,
+  "72 watt street, featherston": {
+    "lat": -41.110119,
+    "lng": 175.3252166
+  },
+  "180a manchester street, feilding": {
+    "lat": -40.2203798,
+    "lng": 175.5595453
+  },
+  "9 rothesay place, highbury": {
+    "lat": -40.3627194,
+    "lng": 175.5732987
+  },
+  "19 mill grove, clareville": {
+    "lat": -41.0130733,
+    "lng": 175.531535
+  },
+  "286 central mangaone road, eketahuna": {
+    "lat": -40.6098886,
+    "lng": 175.7407759
+  },
+  "1294 turakina valley road, turakina": {
+    "lat": -39.9699167,
+    "lng": 175.3108546
+  },
+  "154 watershed road, bunnythorpe": {
+    "lat": -40.2748532,
+    "lng": 175.7014248
+  },
+  "19 bengston street, eketahuna": null,
+  "17 pickwick road, otamatea": {
+    "lat": -39.9005799,
+    "lng": 175.0168583
+  },
+  "15 tangimoana road, ohakea": {
+    "lat": -40.1917263,
+    "lng": 175.3851668
+  },
+  "41 tayforth road, whanganui": {
+    "lat": -39.9196493,
+    "lng": 175.009966
+  },
+  "8 aotea street, feilding": {
+    "lat": -40.2058333,
+    "lng": 175.562352
+  },
+  "295 dalefield road, dalefield": {
+    "lat": -41.0328783,
+    "lng": 175.4890998
+  },
+  "42 johnstone drive, fitzherbert": {
+    "lat": -40.3915317,
+    "lng": 175.6487855
+  },
+  "471 lees road, feilding": {
+    "lat": -40.2179568,
+    "lng": 175.4989616
+  },
+  "85 watt street, featherston": {
+    "lat": -41.1095767,
+    "lng": 175.3251928
+  },
+  "7b brassey road, saint johns hill": {
+    "lat": -39.9148144,
+    "lng": 175.0362797
+  },
+  "9 fox road, springvale": {
+    "lat": -39.93145,
+    "lng": 175.019669
+  },
+  "47 kowhai street, castlecliff": {
+    "lat": -39.939761,
+    "lng": 175.0046995
+  },
+  "119 pharazyn street, feilding": {
+    "lat": -40.2068717,
+    "lng": 175.5860799
+  },
+  "25 waicola drive, fitzherbert": {
+    "lat": -40.382983,
+    "lng": 175.6441272
+  },
+  "6 hayward street, featherston": {
+    "lat": -41.1153734,
+    "lng": 175.3304852
+  },
+  "182 kimbolton road, feilding": {
+    "lat": -40.2225031,
+    "lng": 175.5718865
+  },
+  "388 ruakokoputuna road, martinborough": {
+    "lat": -41.3197692,
+    "lng": 175.4382644
+  },
+  "2187 state highway 3, sanson": {
+    "lat": -40.2380021,
+    "lng": 175.4738356
+  },
+  "36 cloverlea road, westbrook": {
+    "lat": -40.3562161,
+    "lng": 175.5645149
+  },
+  "71 wightman road, sanson": {
+    "lat": -40.1893995,
+    "lng": 175.3949395
+  },
+  "14 spelman court, ashhurst": {
+    "lat": -40.2953642,
+    "lng": 175.7516379
+  },
+  "65 hartwell drive, bunnythorpe": null,
+  "32 harrison street west, featherston": {
+    "lat": -41.1112875,
+    "lng": 175.3255336
+  },
+  "52 surrey road, springvale": {
+    "lat": -39.9281514,
+    "lng": 175.0216917
+  },
+  "2/31 moore street, tawhero": null,
+  "6 monmouth street, feilding": {
+    "lat": -40.2199474,
+    "lng": 175.5722131
+  },
+  "262 campbell road, brunswick": {
+    "lat": -39.8434604,
+    "lng": 174.9958073
+  },
+  "5 te arakura road, newbury": {
+    "lat": -40.279762,
+    "lng": 175.5536767
   }
 }
