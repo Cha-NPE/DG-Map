@@ -474,7 +474,7 @@
   <div id="map-wrap">
     <div id="hint">Waiting for a spreadsheet. Columns needed: <span style="color:var(--text)">Job</span>, <span style="color:var(--text)">Site</span>.</div>
     <div id="legend">
-      <div class="legend-row"><span class="legend-dot" style="background:var(--green)"></span>OH &mdash; overhead</div>
+      <div class="legend-row"><span class="legend-dot" style="background:var(--blue)"></span>OH &mdash; overhead</div>
       <div class="legend-row"><span class="legend-dot" style="background:var(--red)"></span>UG &mdash; underground</div>
       <div class="legend-row" id="legend-other" style="display:none"><span class="legend-dot" style="background:var(--amber)"></span>Other / unspecified</div>
     </div>
@@ -561,7 +561,7 @@
 
   // Type -> pin color. OH = overhead (red), UG = underground (blue).
   // Anything else, or a missing Type column, falls back to amber.
-  const TYPE_COLORS = { OH: 'var(--green)', UG: 'var(--red)' };
+  const TYPE_COLORS = { OH: 'var(--blue)', UG: 'var(--red)' };
 
   function colorForType(type){
     const key = (type || '').trim().toUpperCase();
