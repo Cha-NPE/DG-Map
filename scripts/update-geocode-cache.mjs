@@ -17,9 +17,8 @@ const SPREADSHEET_CANDIDATES = ['DGS LIST.xlsx', 'DGS LIST.xls', 'DGS LIST.csv']
 const CACHE_FILE = 'geocode-cache.json';
 
 // Roughly Whanganui / Manawatū / southern Hawke's Bay / Wairarapa /
-// Wellington / Kapiti Coast. West, South, East, North in lon/lat.
-// Keep this in sync with NZ_LOWER_NI_BBOX in index.html.
-const NZ_LOWER_NI_BBOX = { west: 174.2, south: -41.75, east: 177.0, north: -39.1 };
+// Wellington / Kapiti Coast. Keep this in sync with NZ_TARGET_BBOX in index.html.
+const NZ_TARGET_BBOX = { west: 174.2, south: -41.75, east: 177.0, north: -39.1 };
 
 // A descriptive User-Agent identifying this script is required by
 // Nominatim's usage policy for automated/scripted use.
@@ -36,8 +35,8 @@ function findKey(row, candidates){
 }
 
 function inRegion(lat, lng){
-  return lat >= NZ_LOWER_NI_BBOX.south && lat <= NZ_LOWER_NI_BBOX.north &&
-         lng >= NZ_LOWER_NI_BBOX.west && lng <= NZ_LOWER_NI_BBOX.east;
+  return lat >= NZ_TARGET_BBOX.south && lat <= NZ_TARGET_BBOX.north &&
+         lng >= NZ_TARGET_BBOX.west && lng <= NZ_TARGET_BBOX.east;
 }
 
 function cacheKey(address){
@@ -47,7 +46,7 @@ function cacheKey(address){
 function sleep(ms){ return new Promise(r => setTimeout(r, ms)); }
 
 async function geocode(address){
-  const bbox = NZ_LOWER_NI_BBOX;
+  const bbox = NZ_TARGET_BBOX;
   const viewbox = `${bbox.west},${bbox.north},${bbox.east},${bbox.south}`;
   const url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=nz'
     + `&viewbox=${viewbox}&bounded=1`
@@ -105,7 +104,16 @@ async function main(){
     }
   }
 
-  const toLookup = addresses.filter(a => !Object.prototype.hasOwnProperty.call(cache, cacheKey(a)));
+  const needsLookup = (address) => {
+    const key = cacheKey(address);
+    if (!Object.prototype.hasOwnProperty.call(cache, key)) return true;
+    // No coordinates were stored for out-of-region misses, so if the region
+    // boundary has since changed, these need a fresh lookup to find out.
+    // Cached coordinate objects don't need re-fetching — the page itself
+    // re-checks those against the current boundary at render time.
+    return cache[key] === 'out-of-region';
+  };
+  const toLookup = addresses.filter(needsLookup);
   console.log(`${addresses.length} unique site addresses, ${toLookup.length} new to geocode.`);
 
   let changed = false;

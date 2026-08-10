@@ -432,7 +432,7 @@
     <div id="brand">
       <div class="mark">JOB SITE MAPPER</div>
       <h1>Plot jobs from a spreadsheet</h1>
-      <p>Upload a workbook with <strong style="color:var(--text)">Job</strong> and <strong style="color:var(--text)">Site</strong> columns. Site addresses are geocoded and dropped as pins on the map. Only sites in Coromandel / Waikato / western Bay of Plenty (north of Taupō, eastern side of the North Island) are mapped.</p>
+      <p>Upload a workbook with <strong style="color:var(--text)">Job</strong> and <strong style="color:var(--text)">Site</strong> columns. Site addresses are geocoded and dropped as pins on the map. Only sites in the lower North Island (Whanganui / Manawatū / Wairarapa / Wellington) are mapped.</p>
     </div>
 
     <div id="upload-zone">
@@ -542,7 +542,7 @@
   const legend = document.getElementById('legend');
   const legendOther = document.getElementById('legend-other');
 
-  const map = L.map('map', { zoomControl: true, attributionControl: true }).setView([-37.6, 176.0], 8);
+  const map = L.map('map', { zoomControl: true, attributionControl: true }).setView([-40.4, 175.6], 7);
 
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS community',
@@ -830,18 +830,17 @@
   // already have that address, then any new lookups get saved to
   // localStorage. Use "Export cache" to download the combined result as
   // geocode-cache.json and commit it back to the repo to share it.
-  // v3: region changed from lower North Island to Coromandel / Waikato /
-  // western Bay of Plenty (north of Taupō, eastern side of North Island) —
-  // old cached results are invalidated since the boundary moved.
+  // v4: region reverted back to lower North Island (Whanganui / Manawatū /
+  // Wairarapa / Wellington) — old cached results outside this boundary
+  // get re-checked automatically the next time they're read, no manual
+  // cache clear needed.
   const CACHE_KEY = 'jobSiteMapper.geocodeCache.v3';
   const REPO_CACHE_FILENAME = 'geocode-cache.json';
   const geocodeCache = loadLocalCache();
 
-  // Roughly Coromandel Peninsula (tip to base), South Waikato, and the
-  // western Bay of Plenty including Tauranga / Mount Maunganui, with some
-  // extra margin around each — north of Taupō, on the eastern side of the
-  // North Island. West, South, East, North in lon/lat.
-  const NZ_TARGET_BBOX = { west: 174.7, south: -39.2, east: 177.3, north: -36.0 };
+  // Roughly Whanganui / Manawatū / southern Hawke's Bay / Wairarapa /
+  // Wellington / Kapiti Coast. West, South, East, North in lon/lat.
+  const NZ_TARGET_BBOX = { west: 174.2, south: -41.75, east: 177.0, north: -39.1 };
 
   function inRegion(lat, lng){
     return lat >= NZ_TARGET_BBOX.south && lat <= NZ_TARGET_BBOX.north &&
